@@ -1,0 +1,109 @@
+.iconBanner {
+    
+    width: 100%;
+
+    background-color: $greyBackground;
+    
+
+    &__all-icon-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 8rem 0;
+        margin: auto;
+        width: 80%;
+        align-items: center;
+    }
+
+    &--extraWide {
+        width: unset;
+    }
+
+
+    &__container {
+        transition: opacity 0.5s linear;
+        &:hover {
+            opacity: 0.8;
+        }
+        // width: 33.33%;
+        text-align: center;
+
+        img {
+            // border-radius: 200px;
+            margin-bottom: 2.5rem;
+            width: 80px;
+            height: 80px;
+        }
+        
+    
+        & .iconBanner__text {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .iconBanner__all-icon-container {
+        // flex-direction: column;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .iconBanner__text {
+            font-size: 2rem;
+        }
+
+        
+            width: 100%;
+        
+        
+    
+        .iconBanner__container:not(:last-child) {
+            // margin-bottom: 8rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .iconBanner__all-icon-container {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+    .iconBanner__container:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    .iconBanner__text {
+        font-size: 2rem;
+    }
+    .iconBanner__all-icon-container {
+        flex-direction: column;
+        // padding: 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .iconBanner {
+        width: 100%;
+    }
+}
+
+.iconBanner {
+    a {
+        color: black;
+    }
+}
+
+.iconBanner__container {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.iconBanner__container:hover {
+    opacity: .5;
+}

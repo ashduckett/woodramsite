@@ -1,0 +1,91 @@
+// @import "abstract/functions";
+// @import "abstract/mixins";
+@import "abstract/variables";
+
+// @import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/animate";
+// @import "base/utilities";
+@import "components/imageWithTextSegment";
+@import "components/centeredTextStrip";
+@import "components/cookiesBar";
+@import "components/tripleImageBox";
+@import "components/nav";
+@import "components/contactForm";
+@import "components/iconBanner";
+@import "components/button";
+@import "components/slantyTextWithImage";
+@import "components/transition";
+@import "components/headerArrow";
+@import "components/footer";
+@import "layout/header";
+@import "pages/home";
+@import "pages/about";
+@import "pages/services";
+@import "pages/work";
+@import "pages/contact";
+@import "pages/logoScreen";
+// @import "pages/landing";
+.centerMargins {
+  margin: auto;
+}
+
+.logoScreenLogo {
+  width: 10rem;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered {
+  text-align: center;
+}
+
+.directHeading {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.animatable {
+  transition: transform 1s;
+}
+
+.animIn {
+  -webkit-font-smoothing: antialiased;
+  // transform: translateY(50px);
+  opacity: 0;
+}
+
+.initialState {
+  opacity: 0;
+  
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    // transform: translateY(.5px);
+    opacity: 1;
+  }
+}
+
+
+.slideIn {
+  -webkit-filter: blur(0.000001px);
+  animation-name: moveUp;
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+
+
+
+  

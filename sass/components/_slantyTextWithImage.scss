@@ -1,0 +1,94 @@
+.textAndImage {
+
+    .icon {
+        width: 100px;
+    }
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    height: 80rem;
+
+    &__heading {
+        font-weight: 600;
+        transform: translateZ(0);
+    }
+
+    &__text {
+        width: 50%;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        &--right {
+            order: 2;
+        }
+    }
+
+    &__btn:link {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    &__image {
+        width: 50%;
+        background-size: cover;
+        background-position: top;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    &__textContainer {
+       transform: translateZ(0);
+       width: 75%;
+       margin: auto;
+    }
+    
+    &__borderedText {
+        transform: translateZ(0);
+        margin: 3.5rem 0;
+    }
+    
+    &__paragrah {
+        margin-bottom: 2rem;
+        font-weight: 400;
+        transform: translateZ(0);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .textAndImage {
+        flex-direction: column;
+        height: unset !important;
+
+        // &__textContainer {
+        //     transform: none;
+        // }
+
+        &__image {
+            width: 100%;
+            height: 90vh;
+            img {
+                height: 100%;
+            }
+        }
+
+        &__text {
+            width: 100%;
+            min-height: unset;
+            margin: 7rem 0;
+        }
+    
+        &__text--right {
+            order: unset;
+        }
+    }
+}

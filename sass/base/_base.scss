@@ -1,0 +1,73 @@
+
+@font-face {
+    font-family: futuraOblique;
+    src: url(../fonts/Futura_ICG_Book_Oblique.ttf);
+}
+
+
+@font-face {
+    font-family: futuraBook;
+    src: url(../fonts/Futura-SC-T-OT-Book_19037.ttf);
+}
+
+@font-face {
+    font-family: futuraBook2;
+    src: url(../fonts/Futura-T-OT-Book_19064.ttf);
+}
+
+@font-face {
+    font-family: futuraLight;
+    src: url(../fonts/FuturaLightRegular.otf);
+}
+
+
+
+/* Browser reset - normalize.css is not required anymore */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    //font-family: inherit;
+}
+
+html {
+    /* Override the root font size so rems can be used more easily. 62.5% is what 10px is as a % of 16px */
+    font-size: 62.5%;
+}
+
+body {
+    /* font-size: 16px; */
+    /* Also set font-family, font-weight, line-height and font colour here. */
+    box-sizing: border-box;
+    font-family: futuraLight;
+    overflow-x: hidden;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.italic {
+    font-style: italic;
+}
+
+// Belongs in logo section if there is one.
+.header__logo {
+    cursor: pointer;
+}
+
+.divImg {
+    // transition: 2s opacity linear;
+    // opacity: 0;
+}
+
+.zoomImg {
+    // opacity: 0;
+    // transition: 2s opacity linear;
+}
+
+.reg {
+    color: #666;
+}

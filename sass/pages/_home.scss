@@ -1,0 +1,18 @@
+.home {
+
+    .textAndImage {
+        height: 80rem;
+    }
+    .textAndImage:nth-child(3) {
+        .textAndImage__image {
+            // background-image: url('../img/blagdon2.jpg');
+        }
+    }
+
+    .textAndImage:nth-child(4) {
+        .textAndImage__image {
+            background-image: url('../img/blagdon1.jpg');
+        }
+    }
+}
+

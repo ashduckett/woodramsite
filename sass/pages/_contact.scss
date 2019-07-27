@@ -1,0 +1,13 @@
+.contact {
+    .textAndImage:nth-child(2) {
+        .textAndImage__image {
+            background-image: url('../img/stokefire.jpg');
+        }
+    }
+
+    .textAndImage:nth-child(3) {
+        .textAndImage__image {
+            background-image: url('../img/IMG_1412.jpg');
+        }
+    }
+}

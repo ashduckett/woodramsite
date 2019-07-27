@@ -1,0 +1,16 @@
+.about {
+    .textAndImage {
+        height: 80rem;
+    }
+    .textAndImage:nth-child(2) {
+        .textAndImage__image {
+            // background-image: url('../img/stockStairs.jpg');
+        }
+    }
+
+    .textAndImage:nth-child(3) {
+        .textAndImage__image {
+            // background-image: url('../img/Stokekitchen1.jpg');
+        }
+    }
+}

@@ -1,0 +1,109 @@
+
+
+.landing {
+
+    .nav {
+        &__tel {
+            color: white;
+            font-size: 1.4rem;
+            margin-right: 3rem;
+        }
+    }
+
+    .iconBanner {
+        background-color: transparent;
+
+        &__text {
+            color: white;
+        }
+    }
+
+    &__contactForm {
+        // height: 10rem;
+        background-color: #e6e6e6;
+        text-align: center;
+        &__heading {
+            text-align: center;
+            font-size: 4.5rem;
+            padding: 8rem;
+        }
+    
+    
+        .formField {
+            width: 80%;
+            height: 40px;
+            border: none;
+            margin-bottom: 5rem;
+            font-size: 1.9rem;
+            padding: 1.3rem;
+        }
+    
+    }
+
+    .header__unblurred-image {
+        transition: 2s all;
+    }
+
+    .header__unblurred-image:nth-child(1) {
+        // background-color: gray;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/blagdontree.jpg);
+        // animation: fader 40s linear infinite;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: top;
+        // animation-delay: 5s;
+        // animation-fill-mode: both;
+    }
+
+    // This one is showing up first
+    .header__unblurred-image:nth-child(2) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/DSC_0040.JPG);
+    //     animation: cf4FadeInOut 8s;
+    //     animation-delay: 10s;
+    }
+
+    .header__unblurred-image:nth-child(3) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/fons.JPG);
+    //     animation: cf4FadeInOut 8s;
+    //     animation-delay: 15s;
+    }
+
+    .header__unblurred-image:nth-child(4) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/illminster.jpg);
+    //     animation: cf4FadeInOut 8s;
+    //     animation-delay: 20s;
+    }
+        
+}
+
+.tripleImageBox__image:before {
+    padding-top: 100%;
+}
+
+.tripleImageBox__image {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.tripleImageBox__image:nth-child(1) {
+    margin-left: 2rem;
+}
+
+.tripleImageBox__image:nth-child(3) {
+    margin-right: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .tripleImageBox__image {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .tripleImageBox {
+        margin-right: 2rem;
+    }
+
+    .iconBanner {
+        display: none;
+    }
+}
